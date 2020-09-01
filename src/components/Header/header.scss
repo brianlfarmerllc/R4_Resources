@@ -1,16 +1,14 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
-  background-color: rgba(30, 143, 255, 0.226);
-  padding: 0 2rem 0 2rem;
+  min-height: 20vh;
+  
 }
 
 .logo {
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 20px;
 }
 
 .logo a {
@@ -22,17 +20,11 @@ header {
   display: flex;
 }
 
-.nav-links li {
-  list-style: none;
-}
-
 .nav-links li a {
   padding: 0 10px 0 10px;
-  text-decoration: none;
   letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
-  color: gray;
+  font-weight: 500;
+  color: #161616
 }
 
 .burger {
@@ -47,25 +39,30 @@ header {
   margin: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   body {
     overflow-x: hidden;
   }
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: rgba(30, 143, 255, 0.226);
+    height: 80vh;
+    top: 20vh;
+    background-color: rgb(0, 0, 0);
+    opacity: .6;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     width: 100%;
     transform: translateX(100%);
     transition: transform 0.35s ease-in
   }
   .nav-links li {
     padding-top: 20px;
+  }
+  .nav-links li a {
+    color: white;
   }
 
   .burger {
