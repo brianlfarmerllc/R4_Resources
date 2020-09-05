@@ -1,9 +1,10 @@
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  min-height: 20vh;
-  
+  width:80%;
+  margin: auto;
+  min-height: 15vh;
 }
 
 .logo {
@@ -39,17 +40,24 @@ header {
   margin: 5px;
 }
 
+@media screen and (max-width: 1024px) {
+  header {
+    width: 90%
+  }
+}
+
 @media screen and (max-width: 980px) {
   body {
     overflow-x: hidden;
   }
   .nav-links {
     position: absolute;
+    padding: 10rem 0 10rem 0;
     right: 0px;
-    height: 80vh;
-    top: 20vh;
-    background-color: rgb(0, 0, 0);
-    opacity: .6;
+    height: 85vh;
+    top: 15vh;
+    background-color: #3E78BD;
+    opacity: .9;
     display: flex;
     flex-direction: column;
     align-items: center;
