@@ -1,0 +1,20 @@
+.experience {
+  min-height: 85vh;
+  text-align: center;
+  padding-top: 60px;
+
+  p {
+    margin-top: 2.5em;
+    padding: 0 30% 0 30%;
+  }
+}
+
+.job-cards-container {
+    margin: 10em 20em;
+    padding: 10em 10em 0em 10em; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    background-color: rgb(219, 219, 219);
+}

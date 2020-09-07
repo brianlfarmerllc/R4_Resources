@@ -1,10 +1,6 @@
 import React from "react";
 import "./home.scss";
 import main from "../../assets/main.png";
-import main80 from "../../assets/main80.png"
-import main65 from "../../assets/main65.png"
-import main50 from "../../assets/main50.png"
-// import laptop from "../../assets/laptop.png";
 
 const Home = () => {
   return (
