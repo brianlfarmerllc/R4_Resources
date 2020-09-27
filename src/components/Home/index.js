@@ -1,8 +1,12 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./home.scss";
 import main from "../../assets/main.png";
 
 const Home = () => {
+
+  let history = useHistory();
+
   return (
     <section className="home">
       <div className="showcase">
@@ -15,7 +19,7 @@ const Home = () => {
             permanent placement services to medium and large size corporate and
             non-profit clients.
           </p>
-          <button>Learn More</button>
+          <button onClick={() => history.push("/experience")}>Learn More</button>
         </div>
         <img className="mainImage" src={main}  alt="main vector graphic showing people working" />
       </div>

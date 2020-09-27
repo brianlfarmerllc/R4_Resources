@@ -1,44 +1,56 @@
 [
     {
         "image": "app",
-        "alt": "lfaf asdf afs",
-        "title": "afsfas sfasdf",
-        "text": "afafsfa sdfasfsfsdfa sdf"
+        "alt": "application development",
+        "title": "App Development",
+        "text": "Mobile and Modern Web Applications"
     },
     {
-        "image": "app",
-        "alt": "lfaf asdf afs",
-        "title": "afsfas sfasdf",
-        "text": "afafsfa sdfasfsfsdfa sdf"
+        "image": "database",
+        "alt": "Database Development",
+        "title": "Database Development",
+        "text": "In SQL and No SQL Environments"
     },
     {
-        "image": "app",
-        "alt": "lfaf asdf afs",
-        "title": "afsfas sfasdf",
-        "text": "afafsfa sdfasfsfsdfa sdf"
+        "image": "testing",
+        "alt": "Development Testing",
+        "title": "Development Testing",
+        "text": "Testing Quality Assurance and Quality Control "
     },
     {
-        "image": "app",
-        "alt": "lfaf asdf afs",
-        "title": "afsfas sfasdf",
-        "text": "afafsfa sdfasfsfsdfa sdf"
+        "image": "BI",
+        "alt": "Business Intelligence",
+        "title": "Business Intelligence",
+        "text": "Analyze Data and Deliver Actionable Information"
     },
     {
-        "image": "app",
-        "alt": "lfaf asdf afs",
-        "title": "afsfas sfasdf",
-        "text": "afafsfa sdfasfsfsdfa sdf"
+        "image": "project management",
+        "alt": "Project Management",
+        "title": "Project Managers",
+        "text": "plan procure and execute projects"
     },
     {
-        "image": "app",
-        "alt": "lfaf asdf afs",
-        "title": "afsfas sfasdf",
-        "text": "afafsfa sdfasfsfsdfa sdf"
+        "image": "business analyst",
+        "alt": "Business Analyst",
+        "title": "Business Analyst",
+        "text": "assess business models and its integration with technology"
     },
     {
-        "image": "app",
-        "alt": "lfaf asdf afs",
-        "title": "afsfas sfasdf",
-        "text": "afafsfa sdfasfsfsdfa sdf"
+        "image": "soa",
+        "alt": "Service Oriented Architecture",
+        "title": "Service Oriented Architecture",
+        "text": "maintain communications in a suite of software services"
+    },
+    {
+        "image": "erp",
+        "alt": "Enterprise Resource Planning",
+        "title": "Enterprise Resource Planning",
+        "text": "integrated management of business processes"
+    },
+    {
+        "image": "infastructure",
+        "alt": "Infrastructure Maintenance",
+        "title": "Infrastructure Maintenance",
+        "text": "System Administrators Network and Cisco Engineers"
     }
 ]

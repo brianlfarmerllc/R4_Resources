@@ -6,6 +6,14 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [active, setActive] = useState(false);
 
+  function closeMenu() {
+    if (active === true) {
+      setActive(false);
+    } else {
+      return
+    }
+  }
+
   function toggleActive() {
     if (active === false) {
       setActive(true);
@@ -21,19 +29,19 @@ const Header = () => {
       </Link>
       <nav>
         <ul className={active === true ? "nav-links nav-active" : "nav-links"}>
-          <li onClick={toggleActive}>
+          <li onClick={closeMenu}>
             <Link to="/">Home</Link>
           </li>
-          <li onClick={toggleActive}>
+          <li onClick={closeMenu}>
             <Link to="/experience">Experience</Link>
           </li>
-          <li onClick={toggleActive}>
+          <li onClick={closeMenu}>
             <Link to="/customers">Customers</Link>
           </li>
-          <li onClick={toggleActive}>
+          <li onClick={closeMenu}>
             <Link to="/consultants">Consultants</Link>
           </li>
-          <li onClick={toggleActive}>
+          <li onClick={closeMenu}>
             <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
