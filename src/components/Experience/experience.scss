@@ -28,13 +28,46 @@
   .job-cards-container {
     margin: 0em 0em;
   }
+
+  .experience {
+    .top-text {
+      h1 {
+        font-size: 5rem;
+      }
+      h5 {
+        font-size: 1.75rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1280px) {
-  .experience p{
+  .experience p {
     padding: 0 15% 0 15%;
   }
   .job-cards-container {
     padding: 5em 0em 0em 0em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .experience {
+    .top-text {
+      h1 {
+        font-size: 4rem;
+      }
+      h5 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 552px) {
+  .experience {
+    .top-text {
+      h5 {
+        font-size: 1.25rem;
+      }
+    }
   }
 }
