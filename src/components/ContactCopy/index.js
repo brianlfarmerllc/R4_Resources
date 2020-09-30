@@ -3,38 +3,22 @@ import "./contact.scss";
 import logo from "../../assets/R4 80.png";
 
 const Contact = () => {
-  const [form, setForm] = useState({});
-  const [contactType, setContactType] = useState({ type: "general questions" });
   const [type, setType] = useState(null);
-  const [file, setFile] = useState({});
   const [fileName, setFileName] = useState("Upload Your Resume (optional)");
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
-
   function handleChange(e) {
-    const { value, name } = e.target;
-    setForm({ ...form, [name]: value });
-  }
-
-  function handleContactType(e) {
     const { value } = e.target;
-    setContactType({ type: value });
 
     switch (value) {
-      case "general questions":
+      case "general":
         setType(null);
+        setFileName("Upload Your Resume (optional)");
         break;
-      case "company contact":
+      case "company":
         setType(
           <div className="company-name">
             <input
@@ -42,55 +26,31 @@ const Contact = () => {
               className="company"
               placeholder="Company Name (optional)"
               name="company"
-              onChange={handleChange}
             />
           </div>
         );
+        setFileName("Upload Your Resume (optional)");
         break;
-      case "employee contact":
+      case "employee":
         setType(null);
+        setFileName("Upload Your Resume (optional)");
         break;
 
       default:
         setType(null);
+        setFileName("Upload Your Resume (optional)");
         break;
     }
   }
 
   function seeFile(e) {
-    const { files, name } = e.target;
+    const { files } = e.target;
+    console.log(files)
     if (files[0] === undefined) {
       return;
     } else {
       setFileName(files[0].name);
-      setFile({ [name]: files[0] });
     }
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    const { resume } = file;
-    const { type } = contactType;
-    const { company, email, first, last, message, phone } = form;
-    let data = {
-      type,
-      company,
-      email,
-      first,
-      last,
-      message,
-      phone,
-      resume,
-    };
-    console.log(data);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", data }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
   }
 
   return (
@@ -102,35 +62,20 @@ const Contact = () => {
       <div className="contact-form">
         <h2>Heres A Great Place To Start</h2>
         <img className="logo" src={logo} alt="R4 Resources Logo" />
-        <form
-          action="/contact"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          onSubmit={handleSubmit}
-        >
+        <form action="/contact" name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <div className="question">
             <h3>I'm Looking For</h3>
-            <select name="type" onChange={handleContactType}>
-              <option value="general question">
-                Answers to General Questions
-              </option>
-              <option value="company contact">
-                Talented Technology Professionals
-              </option>
-              <option value="employee contact">
+            <select name="contactType" onChange={handleChange}>
+              <option value="general">Answers to General Questions</option>
+              <option value="company">Talented Technology Professionals</option>
+              <option value="employee">
                 Opportunities With A Great Company
               </option>
             </select>
           </div>
           <div className="resume">
-            <input
-              type="file"
-              id="uglybutton"
-              onChange={seeFile}
-              name="resume"
-            />
+            <input type="file" id="uglybutton" onChange={seeFile} name="resume" />
 
             <label
               htmlFor="uglybutton"
@@ -148,14 +93,12 @@ const Contact = () => {
               className="first"
               placeholder="* First Name"
               name="first"
-              onChange={handleChange}
             />
             <input
               type="text"
               className="last"
               placeholder="* Last Name"
               name="last"
-              onChange={handleChange}
             />
           </div>
           <div className="info">
@@ -164,14 +107,12 @@ const Contact = () => {
               className="phone"
               placeholder="* Phone Number"
               name="phone"
-              onChange={handleChange}
             />
             <input
               type="email"
               className="email"
               placeholder="* Email"
               name="email"
-              onChange={handleChange}
             />
           </div>
           <div className="message">
@@ -179,12 +120,11 @@ const Contact = () => {
               name="message"
               rows="6"
               placeholder="* I'd Like To Know More About..."
-              onChange={handleChange}
             ></textarea>
           </div>
 
           <div className="send">
-            <button type="submit">Submit</button>
+            <button>Submit</button>
           </div>
         </form>
       </div>

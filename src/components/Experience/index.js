@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import "./experience.scss";
 import Cards from "../Cards";
 import JobsDB from "../../data/job-cards.json";
 
 const Experience = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   
   let history = useHistory();
 
-  function goContacts () {
-    history.push("/contact")
+  function goContacts() {
+    history.push("/contact");
   }
 
   return (
@@ -19,8 +23,8 @@ const Experience = () => {
         <h5>Responsive - Resourceful - Reliable - Reasonable</h5>
         <p>
           At R4 Resources we strive to provide top level service and talent to
-          our clients with professionals skilled in the most in-demand
-          software and web technologies.
+          our clients with professionals skilled in the most in-demand software
+          and web technologies.
         </p>
         <h3>Top Job Catagories</h3>
       </div>
