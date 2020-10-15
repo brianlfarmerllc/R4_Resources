@@ -80,8 +80,6 @@ const Contact = () => {
             <label
               htmlFor="uglybutton"
               id="uploadText"
-              type="file"
-              name="resume"
             >
               {fileName}
             </label>

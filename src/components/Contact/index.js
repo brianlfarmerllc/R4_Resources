@@ -86,7 +86,7 @@ const Contact = () => {
 
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      // headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", data }),
     })
       .then(() => alert("Success!"))
@@ -135,8 +135,6 @@ const Contact = () => {
             <label
               htmlFor="uglybutton"
               id="uploadText"
-              type="file"
-              name="resume"
             >
               {fileName}
             </label>

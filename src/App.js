@@ -15,6 +15,7 @@ function App() {
         <Route exact path ="/"> <Home/> </Route>
         <Route exact path ="/experience"> <Experience/> </Route>
         <Route exact path ="/contact"> <Contact/> </Route>
+        <Route  path="*"> <Home/> </Route>
       </Switch>
     </Router>
   );

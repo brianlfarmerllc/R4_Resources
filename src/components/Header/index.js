@@ -35,12 +35,12 @@ const Header = () => {
           <li onClick={closeMenu}>
             <Link to="/experience">Experience</Link>
           </li>
-          <li onClick={closeMenu}>
+          {/* <li onClick={closeMenu}>
             <Link to="/customers">Customers</Link>
           </li>
           <li onClick={closeMenu}>
             <Link to="/consultants">Consultants</Link>
-          </li>
+          </li> */}
           <li onClick={closeMenu}>
             <Link to="/contact">Contact Us</Link>
           </li>
