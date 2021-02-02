@@ -1,86 +1,50 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:80%;
-    margin: auto;
-    min-height: 15vh;
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+}
+
+.copyright a:active,
+.copyright a:focus,
+.copyright a:hover {
+  text-decoration: none;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+.social-icons a {
+  background-color: white;
+  color: #818a91;
+  font-size: 22px;
+  line-height: 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.35s linear;
+  -o-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 980px) {
+  footer {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
   }
-  
-  .logo {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-  }
-  
-  .logo a {
-    text-decoration: none;
-    color: gray;
-  }
-  
-  .nav-links {
-    display: flex;
-  }
-  
-  .nav-links li a {
-    padding: 0 10px 0 10px;
-    letter-spacing: 3px;
-    font-weight: 500;
-    color: #161616
-  }
-  
-  .burger {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: grey;
-    margin: 5px;
-  }
-  
-  @media screen and (max-width: 1024px) {
-    header {
-      width: 90%
-    }
-  }
-  
-  @media screen and (max-width: 980px) {
-    body {
-      overflow-x: hidden;
-    }
-    .nav-links {
-      position: fixed;
-      padding: 10rem 0 10rem 0;
-      right: 0px;
-      height: 100vh;
-      top: 0vh;
-      background-color: #3E78BD;
-      opacity: .9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
-      transform: translateX(100%);
-      transition: transform 0.35s ease-in;
-      z-index: 100;
-    }
-    .nav-links li {
-      padding-top: 20px;
-    }
-    .nav-links li a {
-      color: white;
-    }
-  
-    .burger {
-      display: block;
-    }
-  }
-  
-  .nav-active {
-      transform: translateX(0%);
-      overflow: hidden
-  }
-  
+}

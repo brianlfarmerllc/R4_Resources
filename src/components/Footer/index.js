@@ -1,57 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import "./footer.scss";
-import logo from "../../assets/R4 80.png";
-import { Link } from "react-router-dom";
 
-const Footer= () => {
-  const [active, setActive] = useState(false);
+const Footer = () => {
 
-  function closeMenu() {
-    if (active === true) {
-      setActive(false);
-    } else {
-      return
-    }
-  }
-
-  function toggleActive() {
-    if (active === false) {
-      setActive(true);
-    } else {
-      setActive(false);
-    }
-  }
+  let today = new Date()
+  let year = today.getFullYear()
 
   return (
-    <header>
-      <Link to="/">
-        <img className="logo" src={logo} alt="R4 Resources Logo" />
-      </Link>
-      <nav>
-        <ul className={active === true ? "nav-links nav-active" : "nav-links"}>
-          <li onClick={closeMenu}>
-            <Link to="/">Home</Link>
-          </li>
-          <li onClick={closeMenu}>
-            <Link to="/experience">Experience</Link>
-          </li>
-          {/* <li onClick={closeMenu}>
-            <Link to="/customers">Customers</Link>
-          </li>
-          <li onClick={closeMenu}>
-            <Link to="/consultants">Consultants</Link>
-          </li> */}
-          <li onClick={closeMenu}>
-            <Link to="/contact">Contact Us</Link>
-          </li>
-        </ul>
-      </nav>
-      <div onClick={toggleActive} className="burger">
-        <div className="line1"></div>
-        <div className="line2"></div>
-        <div className="line3"></div>
+    <footer>
+      <div className="copyright">
+        <p className="copyright-text" style={{ textAlign: "center" }}>Copyright &copy; <span id="copyright">2020-{year}</span> All Rights Reserved by
+                <a href="https://github.com/brianlfarmerllc" target="blank" style={{ color: "#4285F4" }}> BrianLFarmerLLC</a>
+        </p>
       </div>
-    </header>
+
+      <div className="media">
+        <ul className="social-icons">
+          <li><a className="github" href="https://www.github.com/brianlfarmerllc/" target="blank"><i
+            className="fa fa-github"></i></a></li>
+          <li><a className="linkedin" href="https://www.linkedin.com/in/BrianLFarmerLLC" target="blank"><i
+            className="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </footer>
   );
 };
 
