@@ -1,5 +1,5 @@
 
-# BFF K-9 Training Session Tracker
+# R4 Resources small business site
 
 [![Site License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/brianlfarmerllc/stacey-business-site)
  [![Netlify URL](https://img.shields.io/badge/Netlify-URL-green.svg)](https://clever-babbage-036ee8.netlify.app/)
