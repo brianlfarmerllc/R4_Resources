@@ -152,6 +152,7 @@ header {
   width: 80%;
   max-width: 1280px;
   margin: auto;
+  min-height: 75vh;
 }
 
 .showcase {
@@ -283,6 +284,7 @@ header {
   text-align: center;
   padding: 60px 0;
   background-color: rgba(233, 232, 232, 0.26);
+  padding-bottom: 6em;
 }
 
 .contact p {
@@ -472,6 +474,61 @@ header {
 
 .contact-form ::placeholder {
   color: black;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+}
+
+.copyright a:active,
+.copyright a:focus,
+.copyright a:hover {
+  text-decoration: none;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons a {
+  background-color: white;
+  color: #818a91;
+  font-size: 22px;
+  line-height: 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+
+@media screen and (max-width: 980px) {
+  footer {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 1440px) {
