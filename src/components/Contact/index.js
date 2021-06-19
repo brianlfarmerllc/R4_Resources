@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./contact.scss";
 import logo from "../../assets/R4 80.png";
 
 const Contact = () => {
@@ -132,10 +131,7 @@ const Contact = () => {
               name="resume"
             />
 
-            <label
-              htmlFor="uglybutton"
-              id="uploadText"
-            >
+            <label htmlFor="uglybutton" id="uploadText">
               {fileName}
             </label>
           </div>

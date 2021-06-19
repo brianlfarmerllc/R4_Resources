@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import "./experience.scss";
 import Cards from "../Cards";
 import JobsDB from "../../data/job-cards.json";
 
 const Experience = () => {
-
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-  
+    window.scrollTo(0, 0);
+  }, []);
+
   let history = useHistory();
 
   function goContacts() {

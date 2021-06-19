@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  color: #424040;
+}
+h2 {
+  font-size: 5rem;
+  font-family: "Rubik", sans-serif;
+  color: #424040;
+}
+h3 {
+  font-size: 3.5rem;
+  font-family: "Karla", sans-serif;
+  color: #424040;
+}
+
+h4 {
+  font-size: 3rem;
+  font-family: "Karla", sans-serif;
+  color: #424040;
+}
+h5 {
+  font-size: 2rem;
+  font-family: "Karla", sans-serif;
+  color: #424040;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Karla", sans-serif;
+  color: #424040;
+}
+
+li {
+  font-size: 2rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #424040;
+}
+
+button {
+  color: white;
+  background-color: #015794;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,711 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  color: #424040;
+}
+
+h2 {
+  font-size: 5rem;
+  font-family: "Rubik", sans-serif;
+  color: #424040;
+}
+
+h3 {
+  font-size: 3.5rem;
+  font-family: "Karla", sans-serif;
+  color: #424040;
+}
+
+h4 {
+  font-size: 3rem;
+  font-family: "Karla", sans-serif;
+  color: #424040;
+}
+
+h5 {
+  font-size: 2rem;
+  font-family: "Karla", sans-serif;
+  color: #424040;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Karla", sans-serif;
+  color: #424040;
+}
+
+li {
+  font-size: 2rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #424040;
+}
+
+button {
+  color: white;
+  background-color: #015794;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: auto;
+  min-height: 15vh;
+}
+
+.nav-container {
+  margin: auto;
+  width: 100%;
+  max-width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: gray;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-links li a {
+  padding: 0 10px 0 10px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: #161616;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: grey;
+  margin: 5px;
+}
+
+.nav-active {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  overflow: hidden;
+}
+
+.home {
+  width: 80%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.showcase {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(410px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+}
+
+.showcase .title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  padding-top: 100px;
+}
+
+.showcase .title p {
+  margin-top: 2.5em;
+}
+
+.showcase .title button {
+  margin-top: 2em;
+  cursor: pointer;
+  outline: none;
+}
+
+.showcase .title button:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #4aacde;
+}
+
+.showcase .title button:active {
+  border: none;
+}
+
+.showcase .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 6rem;
+}
+
+.showcase .mainImage {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  width: 100%;
+}
+
+.home .showcase h1 {
+  margin-bottom: 1rem;
+}
+
+.experience {
+  min-height: 85vh;
+  text-align: center;
+  padding-top: 60px;
+  background-color: rgba(233, 232, 232, 0.26);
+}
+
+.experience p {
+  margin-top: 2.5em;
+  padding: 0 30% 0 30%;
+  text-transform: capitalize;
+}
+
+.experience h3 {
+  margin-top: 2.5em;
+}
+
+.job-cards-container {
+  margin: 0em 10em;
+  padding: 5em 10em 0em 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.card {
+  position: relative;
+  height: 40rem;
+  width: 30rem;
+  border-radius: 5px;
+  margin: 0 3em 6em 3em;
+  background-color: white;
+  -webkit-box-shadow: 0 0px 15px -3px rgba(0, 0, 0, 0.1), 0 0px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0px 15px -3px rgba(0, 0, 0, 0.1), 0 0px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card .card-img {
+  padding: 15px 0 15px 0;
+}
+
+.card .card-body .card-text {
+  padding: 0 5% 0 5%;
+  text-transform: capitalize;
+}
+
+.card .card-body button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -71.14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.card .card-body button:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #4aacde;
+}
+
+.card .card-body button:active {
+  border: none;
+}
+
+.contact {
+  min-height: 85vh;
+  text-align: center;
+  padding: 60px 0;
+  background-color: rgba(233, 232, 232, 0.26);
+}
+
+.contact p {
+  margin-top: 2.5em;
+  padding: 0 30% 0 30%;
+  text-transform: capitalize;
+}
+
+.contact h3 {
+  margin-top: 2.5em;
+}
+
+.contact h5 {
+  margin-bottom: 2.5em;
+}
+
+.contact-form {
+  position: relative;
+  height: auto;
+  padding: 3rem;
+  width: 80%;
+  border-radius: 5px;
+  margin: auto;
+  background-color: white;
+  -webkit-box-shadow: 0 0px 15px -3px rgba(0, 0, 0, 0.1), 0 0px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0px 15px -3px rgba(0, 0, 0, 0.1), 0 0px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form img {
+  padding: 2rem 0 2rem 0;
+}
+
+.contact-form .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+
+.contact-form .question h3 {
+  margin-top: 0;
+  margin-right: 2rem;
+}
+
+.contact-form .question select {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  text-transform: none;
+  font-size: 3rem;
+  font-family: "Karla", sans-serif;
+  height: 50px;
+  padding: 0 10px 0 10px;
+}
+
+.contact-form .fullname,
+.contact-form .info,
+.contact-form .company-name,
+.contact-form .resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-form .fullname input,
+.contact-form .fullname label,
+.contact-form .info input,
+.contact-form .info label,
+.contact-form .company-name input,
+.contact-form .company-name label,
+.contact-form .resume input,
+.contact-form .resume label {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  text-transform: none;
+  font-size: 3rem;
+  font-family: "Karla", sans-serif;
+  height: 50px;
+  padding: 0 10px 0 10px;
+  width: 100%;
+  margin: 3rem;
+}
+
+.contact-form .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-form .message textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  text-transform: none;
+  font-size: 3.5rem;
+  font-family: "Karla", sans-serif;
+  padding: 0 10px 0 10px;
+  width: 100%;
+  margin: 3rem;
+  resize: none;
+}
+
+.contact-form select:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+}
+
+.contact-form .resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-form .resume #uglybutton {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.contact-form .resume label {
+  color: black;
+  cursor: pointer;
+  width: auto;
+  color: white;
+  background-color: #015794;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 1em;
+}
+
+.contact-form .resume label:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #4aacde;
+}
+
+.contact-form .send {
+  padding: 4rem 0;
+}
+
+.contact-form .send button {
+  font-size: 3rem;
+  font-family: "Karla", sans-serif;
+}
+
+.contact-form .send button:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #4aacde;
+}
+
+.contact-form .send button:active {
+  border: none;
+}
+
+.contact-form ::-webkit-input-placeholder {
+  color: black;
+}
+
+.contact-form :-ms-input-placeholder {
+  color: black;
+}
+
+.contact-form ::-ms-input-placeholder {
+  color: black;
+}
+
+.contact-form ::placeholder {
+  color: black;
+}
+
+@media screen and (max-width: 1440px) {
+  .title h1 {
+    font-size: 5rem;
+  }
+  .title h5 {
+    font-size: 1.75rem;
+  }
+  .title p {
+    font-size: 1.75rem;
+  }
+  .job-cards-container {
+    margin: 0em 0em;
+  }
+  .experience .top-text h1 {
+    font-size: 5rem;
+  }
+  .experience .top-text h5 {
+    font-size: 1.75rem;
+  }
+  .contact .top-text h1 {
+    font-size: 5rem;
+  }
+  .contact .top-text h5 {
+    font-size: 1.75rem;
+  }
+  .contact .contact-form h2 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .experience p {
+    padding: 0 15% 0 15%;
+  }
+  .job-cards-container {
+    padding: 5em 0em 0em 0em;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .question {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .question select {
+    text-align-last: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    width: 90%;
+  }
+  .showcase {
+    text-align: center;
+  }
+  .title h1 {
+    font-size: 4rem;
+  }
+  .title h5 {
+    font-size: 1.5rem;
+  }
+  .title p {
+    font-size: 1.5rem;
+  }
+  .experience .top-text h1 {
+    font-size: 4rem;
+  }
+  .experience .top-text h5 {
+    font-size: 1.5rem;
+  }
+  .contact .top-text h1 {
+    font-size: 4rem;
+  }
+  .contact .top-text h5 {
+    font-size: 1.5rem;
+  }
+  .contact .contact-form h2 {
+    font-size: 4rem;
+  }
+  .contact .question h3,
+  .contact .question select {
+    font-size: 2rem;
+  }
+  .contact .resume label {
+    font-size: 2rem;
+    padding-top: 12px;
+  }
+  .contact .company-name input,
+  .contact .company-name textarea,
+  .contact .company-name button,
+  .contact .fullname input,
+  .contact .fullname textarea,
+  .contact .fullname button,
+  .contact .info input,
+  .contact .info textarea,
+  .contact .info button,
+  .contact .message input,
+  .contact .message textarea,
+  .contact .message button,
+  .contact .send input,
+  .contact .send textarea,
+  .contact .send button {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: fixed;
+    padding: 10rem 0 10rem 0;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    background-color: #3e78bd;
+    opacity: 0.9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    -webkit-transition: -webkit-transform 0.35s ease-in;
+    transition: -webkit-transform 0.35s ease-in;
+    transition: transform 0.35s ease-in;
+    transition: transform 0.35s ease-in, -webkit-transform 0.35s ease-in;
+    z-index: 100;
+  }
+  .nav-links li {
+    padding-top: 20px;
+  }
+  .nav-links li a {
+    color: white;
+  }
+  .burger {
+    display: block;
+  }
+  .title {
+    padding-top: 1.5rem;
+  }
+  .title h1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .title h5 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .title p {
+    width: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fullname,
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-form .fullname input,
+  .contact-form .info input,
+  .contact-form .message textarea,
+  .contact-form .company-name input {
+    margin: 3rem 0;
+  }
+  .contact .resume label {
+    width: 100%;
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 552px) {
+  .showcase {
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .showcase .title h5 {
+    display: none;
+  }
+  .showcase .img {
+    margin: auto;
+    width: 90%;
+  }
+  .experience .top-text h5 {
+    font-size: 1.25rem;
+  }
+  .contact .top-text h5 {
+    font-size: 1.25rem;
+  }
+  .contact .question h3,
+  .contact .question select {
+    font-size: 1.75rem;
+  }
+  .contact .resume label {
+    font-size: 1.75rem;
+    padding-top: 14px;
+  }
+  .contact .company-name input,
+  .contact .company-name textarea,
+  .contact .company-name button,
+  .contact .fullname input,
+  .contact .fullname textarea,
+  .contact .fullname button,
+  .contact .info input,
+  .contact .info textarea,
+  .contact .info button,
+  .contact .message input,
+  .contact .message textarea,
+  .contact .message button,
+  .contact .send input,
+  .contact .send textarea,
+  .contact .send button {
+    font-size: 1.75rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */

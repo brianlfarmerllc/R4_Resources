@@ -1,0 +1,267 @@
+@media screen and (max-width: 1440px) {
+  //    Home Component
+  .title h1 {
+    font-size: 5rem;
+  }
+  .title h5 {
+    font-size: 1.75rem;
+  }
+  .title p {
+    font-size: 1.75rem;
+  }
+
+  .job-cards-container {
+    margin: 0em 0em;
+  }
+
+  // Experience Component
+  .experience {
+    .top-text {
+      h1 {
+        font-size: 5rem;
+      }
+      h5 {
+        font-size: 1.75rem;
+      }
+    }
+  }
+
+  //   Contact Component
+  .contact {
+    .top-text {
+      h1 {
+        font-size: 5rem;
+      }
+      h5 {
+        font-size: 1.75rem;
+      }
+    }
+    .contact-form {
+      h2 {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  // Experience Component
+  .experience p {
+    padding: 0 15% 0 15%;
+  }
+  .job-cards-container {
+    padding: 5em 0em 0em 0em;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  //   Contact Component
+  .question {
+    flex-direction: column;
+
+    select {
+      text-align-last: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  //   Header Component
+  header {
+    width: 90%;
+  }
+  //    Home Component
+  .showcase {
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 4rem;
+  }
+  .title h5 {
+    font-size: 1.5rem;
+  }
+  .title p {
+    font-size: 1.5rem;
+  }
+
+  // Experience Component
+  .experience {
+    .top-text {
+      h1 {
+        font-size: 4rem;
+      }
+      h5 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  //   Contact Component
+  .contact {
+    .top-text {
+      h1 {
+        font-size: 4rem;
+      }
+      h5 {
+        font-size: 1.5rem;
+      }
+    }
+    .contact-form {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+    .question {
+      h3,
+      select {
+        font-size: 2rem;
+      }
+    }
+
+    .resume {
+      label {
+        font-size: 2rem;
+        padding-top: 12px;
+      }
+    }
+    .company-name,
+    .fullname,
+    .info,
+    .message,
+    .send {
+      input,
+      textarea,
+      button {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  //   Global
+  body {
+    overflow-x: hidden;
+  }
+  // Header Component
+  .nav-links {
+    position: fixed;
+    padding: 10rem 0 10rem 0;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    background-color: #3e78bd;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    transition: transform 0.35s ease-in;
+    z-index: 100;
+  }
+  .nav-links li {
+    padding-top: 20px;
+  }
+  .nav-links li a {
+    color: white;
+  }
+
+  .burger {
+    display: block;
+  }
+  //    Home Component
+  .title {
+    padding-top: 1.5rem;
+
+    h1 {
+      grid-row: 1/2;
+    }
+    h5 {
+      grid-row: 1/2;
+    }
+    p {
+      width: 100%;
+      grid-row: 1/2;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //   Contact Component
+  .fullname,
+  .info {
+    flex-direction: column;
+  }
+
+  .contact-form .fullname input,
+  .contact-form .info input,
+  .contact-form .message textarea,
+  .contact-form .company-name input {
+    margin: 3rem 0;
+  }
+  .contact .resume {
+    label {
+      width: 100%;
+      margin: 3rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 552px) {
+  //    Home Component
+  .showcase {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    .title {
+      h5 {
+        display: none;
+      }
+    }
+    .img {
+      margin: auto;
+      width: 90%;
+    }
+  }
+
+  // Experience Component
+  .experience {
+    .top-text {
+      h5 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  //   Contact Component
+  .contact {
+    .top-text {
+      h5 {
+        font-size: 1.25rem;
+      }
+    }
+    .question {
+      h3,
+      select {
+        font-size: 1.75rem;
+      }
+    }
+
+    .resume {
+      label {
+        font-size: 1.75rem;
+        padding-top: 14px;
+      }
+    }
+    .company-name,
+    .fullname,
+    .info,
+    .message,
+    .send {
+      input,
+      textarea,
+      button {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
