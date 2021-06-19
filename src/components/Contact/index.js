@@ -12,14 +12,6 @@ const Contact = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
-
   function handleChange(e) {
     const { value, name } = e.target;
     setForm({ ...form, [name]: value });
@@ -66,32 +58,6 @@ const Contact = () => {
     }
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const { resume } = file;
-    const { type } = contactType;
-    const { company, email, first, last, message, phone } = form;
-    let data = {
-      type,
-      company,
-      email,
-      first,
-      last,
-      message,
-      phone,
-      resume,
-    };
-    console.log(data);
-
-    fetch("/", {
-      method: "POST",
-      // headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", data }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-  }
-
   return (
     <section className="contact">
       <div className="top-text">
@@ -101,17 +67,11 @@ const Contact = () => {
       <div className="contact-form">
         <h2>Heres A Great Place To Start</h2>
         <img className="logo" src={logo} alt="R4 Resources Logo" />
-        <form
-          action="/contact"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          onSubmit={handleSubmit}
-        >
+        <form name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <div className="question">
             <h3>I'm Looking For</h3>
-            <select name="type" onChange={handleContactType}>
+            <select name="contactType" onChange={handleContactType}>
               <option value="general question">
                 Answers to General Questions
               </option>
