@@ -27,6 +27,7 @@ function App() {
           <Home />{" "}
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

@@ -1,9 +1,8 @@
 .contact {
   min-height: 85vh;
   text-align: center;
-  padding: 60px 0;
+  padding-top: 60px;
   background-color: rgba(233, 232, 232, 0.26);
-  padding-bottom: 6em;
 
   p {
     margin-top: 2.5em;
@@ -28,8 +27,7 @@
   border-radius: 5px;
   margin: auto;
   background-color: white;
-  box-shadow: 0 0px 15px -3px rgba(0, 0, 0, 0.1),
-    0 0px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0px 15px -3px rgba(0, 0, 0, 0.1), 0 0px 6px -2px rgba(0, 0, 0, 0.05);
 
   img {
     padding: 2rem 0 2rem 0;
@@ -153,5 +151,129 @@
 
   ::placeholder {
     color: black;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .contact {
+    .top-text {
+      h1 {
+        font-size: 5rem;
+      }
+      h5 {
+        font-size: 1.75rem;
+      }
+    }
+    .contact-form {
+      h2 {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .question {
+    flex-direction: column;
+
+    select {
+      text-align-last: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    .top-text {
+      h1 {
+        font-size: 4rem;
+      }
+      h5 {
+        font-size: 1.5rem;
+      }
+    }
+    .contact-form {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+    .question {
+      h3,
+      select {
+        font-size: 2rem;
+      }
+    }
+
+    .resume {
+      label {
+        font-size: 2rem;
+        padding-top: 12px;
+      }
+    }
+    .company-name,
+    .fullname,
+    .info,
+    .message,
+    .send {
+      input,
+      textarea,
+      button {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fullname,
+  .info {
+    flex-direction: column;
+  }
+
+  .contact-form .fullname input,
+  .contact-form .info input,
+  .contact-form .message textarea,
+  .contact-form .company-name input {
+    margin: 3rem 0;
+  }
+  .contact .resume {
+    label {
+      width: 100%;
+      margin: 3rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 552px) {
+  .contact {
+    .top-text {
+      h5 {
+        font-size: 1.25rem;
+      }
+    }
+    .question {
+      h3,
+      select {
+        font-size: 1.75rem;
+      }
+    }
+
+    .resume {
+      label {
+        font-size: 1.75rem;
+        padding-top: 14px;
+      }
+    }
+    .company-name,
+    .fullname,
+    .info,
+    .message,
+    .send {
+      input,
+      textarea,
+      button {
+        font-size: 1.75rem;
+      }
+    }
   }
 }
